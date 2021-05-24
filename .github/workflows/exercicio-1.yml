@@ -22,3 +22,22 @@ jobs:
     - name: primeiro
       run: date
       
+  
+  job2: 
+    name: segundo_job
+    runs-on: windows-latest
+    
+    
+    steps:
+    - name: segundo
+      run: date
+      
+      
+  job3: 
+    name: terceiro_job
+    runs-on: ubuntu-latest
+    
+    
+    steps:
+    - name: terceiro
+      run: date
