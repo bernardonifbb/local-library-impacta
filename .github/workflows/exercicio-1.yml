@@ -45,7 +45,8 @@ jobs:
   job4: 
     name: quarto_job
     runs-on: depend-latest
-    
     needs: [job1, job2, job3]
     
-    
+  steps:
+    - name: PASS0-FINAL
+      run: echo PASSO-FINAL
