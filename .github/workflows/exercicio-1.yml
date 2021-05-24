@@ -1,0 +1,24 @@
+name: DATA
+
+
+on:
+  
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  
+  workflow_dispatch:
+
+
+jobs:
+    job1: 
+    name: primeira_data
+    runs-on: ubuntu-latest
+    
+    
+    steps:
+    - name: data-primeira
+      run: date
+      
