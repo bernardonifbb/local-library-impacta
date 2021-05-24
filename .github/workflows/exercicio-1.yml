@@ -13,12 +13,12 @@ on:
 
 
 jobs:
-    job1: 
-    name: primeira_data
+  job1: 
+    name: primeiro_job
     runs-on: ubuntu-latest
     
     
     steps:
-    - name: data-primeira
+    - name: primeiro
       run: date
       
