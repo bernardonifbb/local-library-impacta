@@ -43,9 +43,9 @@ jobs:
       
   job4: 
     name: quarto_job
-    runs-on: depend-latest
+    runs-on: ubuntu-latest
     needs: [job1, job2, job3]
     
   steps:
     - name: passo-final
-      run: echo job1
+      run: echo passo-final
