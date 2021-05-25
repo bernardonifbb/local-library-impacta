@@ -16,10 +16,6 @@ jobs:
       NODE_VERSION: 12
       JOB_VAR: 'variavel'
      
-    steps:
-      - name: data de atual
-        run: data
-     
      
     steps:
     
