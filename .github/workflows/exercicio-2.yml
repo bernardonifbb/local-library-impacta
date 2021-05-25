@@ -17,8 +17,8 @@ jobs:
       JOB_VAR: 'variavel'
      
     steps:
-      - name: data
-        run: echo data
+      - name: data de atual
+        run: data
      
      
     steps:
