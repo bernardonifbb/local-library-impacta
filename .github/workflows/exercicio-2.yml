@@ -7,14 +7,14 @@ on:
     branches: [ main ]
     
 env:
-  WORKFLOW_VAR: 'workflow'
+  WORKFLOW_INT: 'workflow'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     env:
       NODE_VERSION: 12
-      JOB_VAR: 'variavel'
+      JOB_INT: 'inteiro'
      
      
     steps:
@@ -35,7 +35,6 @@ jobs:
         if-no-files-found: error
         retention-days: 3
     
-      - name: Data Atual
-        run: date
+     
      
         
