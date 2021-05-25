@@ -13,9 +13,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      NODE_VERSION: 1
-      JOB_VAR: 'minha variavel no escopo do job'
-      
+      NODE_VERSION: 12
+      JOB_VAR: 'variavel'
+     
+    steps:
+      - name: data
+        run: echo data
+     
+     
     steps:
     
     - name: Checkout
