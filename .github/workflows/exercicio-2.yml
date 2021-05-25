@@ -35,7 +35,7 @@ jobs:
         if-no-files-found: error
         retention-days: 3
     
-      -name: Data Atual
-       run: date
+      - name: Data Atual
+        run: date
      
         
