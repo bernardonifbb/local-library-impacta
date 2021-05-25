@@ -8,14 +8,14 @@ on:
     branches: [ main ]
     
 env:
-  WORKFLOW_VAR: 'TESTE VARIAVEL - WORKFLOW'
+  WORKFLOW_INT: '1000'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     env:
       NODE_VERSION: 12
-      JOB_JOB: 'CRIANDO VARIAVEL DO JOB'
+      JOB_INT: 'inteiro'
      
      
     steps:
@@ -31,8 +31,7 @@ jobs:
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.2.3
       with:
-        name: aplicativo-FLAVIO-BERNARDONI-BUENO
+        name: app-do-flavio
         path: .
         if-no-files-found: error
         retention-days: 3
- 
