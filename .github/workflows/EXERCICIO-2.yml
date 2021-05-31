@@ -1,6 +1,4 @@
 
-name: EXERCICIO-2
-
 on:
   push:
     branches: [ main ]
@@ -8,14 +6,14 @@ on:
     branches: [ main ]
     
 env:
-  WORKFLOW_VAR: 'variavel no escopo do workflow'
+  WORKFLOW_VAR: 'Testando Variavel de Workflow'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     env:
       NODE_VERSION: 12
-      JOB_VAR: 'variavel no escopo do job'
+      JOB_VAR: 'Criando minha variavel de escopo do JOB'
       
     steps:
     
@@ -30,9 +28,7 @@ jobs:
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.2.3
       with:
-        name: app-flavio-bueno
+        name: aplicativo-do-flavio-bueno
         path: .
         if-no-files-found: error
         retention-days: 3
-
-        
