@@ -29,7 +29,6 @@ jobs:
     name: SonarCloud
     runs-on: ubuntu-latest
     needs: [build]
-    
     steps:
       - uses: actions/checkout@v2
         with:
@@ -38,7 +37,9 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  deploy-homologacao:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+  
+  deploy-homologacao:
     runs-on: ubuntu-latest
     env:
       DB_URI: ${{ secrets.DB_URI }}
